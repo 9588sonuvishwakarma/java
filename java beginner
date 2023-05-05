@@ -1,0 +1,109 @@
+
+// to make call the method without using object by using static ..............
+1............
+
+class HelloWorld {
+     int a=45,
+    b =4;
+     
+     void  sonu(){
+        System.out.println("hello");
+        System.out.println("value= "+a);
+        
+        System.out.println("value= "+b);
+    }
+    public static void main(String[] args) {
+      
+        HelloWorld ob = new HelloWorld();
+        
+        
+        ob.sonu();
+       
+    }
+}
+
+// basic java programmer  end................
+// 2........
+
+
+class HelloWorld {
+    int age = 30;
+    String name = "Ram ji";
+    public static void main(String[] args) {
+        HelloWorld v = new HelloWorld();
+        System.out.println("age = " +v.age);
+        
+        System.out.println("age = " +v.name);
+    }
+}
+
+third ..............................
+3......
+// local and static  variable can 
+class HelloWorld {
+     int a=45,  // instance variable
+    b =4;
+     
+     void  sonu(){
+         int c = 85; // local variable 
+        System.out.println("hello"+c);
+        System.out.println("value= "+a);
+        
+        System.out.println("value= "+b);
+    }
+    public static void main(String[] args) {  // statci method  (we have to make static  to all thing if you are want to directly access)
+      
+        HelloWorld ob = new HelloWorld();
+        
+        
+        ob.sonu();
+       System.out.println("value = " + ob.a);
+       
+       System.out.println("value = " + ob. b);
+    }
+}
+
+
+Construct ..............4......
+4.....
+
+class HelloWorld {
+    static int s;
+    HelloWorld(){
+        s = 15;
+    }
+    void add(){
+        s++;
+    }
+    public static void main(String[] args) {
+        HelloWorld ob = new HelloWorld();
+        HelloWorld ob1 = new HelloWorld();
+        
+        ob.add();
+        ob1.add();
+        System.out.println(s);
+    }
+}
+
+
+class HelloWorld {
+    int s =15;
+    // HelloWorld(){
+    //     s = 15;
+    // }
+    void add(){
+        s++;
+    }
+    public static void main(String[] args) {
+        HelloWorld ob = new HelloWorld();
+        HelloWorld ob1 = new HelloWorld();
+        
+        ob.add();
+        ob1.add();
+        System.out.println(ob.s);
+        
+        System.out.println(ob1.s);
+    }
+}
+
+
